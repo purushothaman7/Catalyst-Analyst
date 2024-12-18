@@ -13,8 +13,7 @@
       }
     ],
     "env": {
-      "FLASK_ENV": "production",
-      "PYTHONPATH": ""
+      "FLASK_ENV": "production"
     }
   }
   
