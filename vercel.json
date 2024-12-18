@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "GUI.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "GUI.py"
+      }
+    ],
+    "env": {
+      "FLASK_ENV": "production",
+      "PYTHONPATH": "Catalyst_Conversion_Rate_Predictor_Site"
+    }
+  }
+  
