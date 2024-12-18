@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Rate Predictor</title>
+    <style>
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            padding: 5px;
+            margin: 5px 0;
+            width: 100%;
+            max-width: 300px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            width: 50%;
+            font-weight: bold;
+            border: solid 2px black;
+            border-radius: 12px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<center>
+<h2>Conversion Rate Predictor 🧪</h2>
+<form method="POST" action="/predict">
+    <label for="temperature">Temperature (°C):</label>
+    <input type="text" id="temperature" name="temperature" required>
+
+    <label for="pressure">Pressure (MPa):</label>
+    <input type="text" id="pressure" name="pressure" required>
+
+    <label for="surface_area">Surface Area (m²/g):</label>
+    <input type="text" id="surface_area" name="surface_area" required>
+
+    <label for="reaction_time">Reaction Time (hours):</label>
+    <input type="text" id="reaction_time" name="reaction_time" required>
+
+    <label for="lignin_loading">Lignin Loading (wt%):</label>
+    <input type="text" id="lignin_loading" name="lignin_loading" required>
+
+    <label for="op_catalyst">Catalyst Used:</label>
+    <select id="op_catalyst" name="op_catalyst" required>
+        <option value="Fe-Fe3C/C">Fe-Fe3C/C</option>
+        <option value="NiRu/Al₂O₃">NiRu/Al₂O₃</option>
+        <option value="Ru/4-1AC">Ru/4-1AC</option>
+        <option value="bimetallic NiCu/C catalyst">bimetallic NiCu/C catalyst</option>
+        <option value="ZrO2, WOx, and MoO3">ZrO2, WOx, and MoO3</option>
+        <option value="Ni3Co1-based MOFs">Ni3Co1-based MOFs</option>
+        <option value="Ni 10% @Fe/NC 0.33 -800">Ni 10% @Fe/NC 0.33 -800</option>
+        <option value="Ni 9 Cu 1 -Mo 2 C/AC">Ni 9 Cu 1 -Mo 2 C/AC</option>
+        <option value="Ni 7 Fe 3 -Mo 2 C/AC">Ni 7 Fe 3 -Mo 2 C/AC</option>
+        <option value="Ni-Ru/Al2O3">Ni-Ru/Al2O3</option>
+        <option value="NiCoC">NiCoC</option>
+        <option value="Pd/C (palladium on carbon) combined with NaOH">Pd/C (palladium on carbon) combined with NaOH</option>
+        <option value="Ni 3 Al 3 -MMO">Ni 3 Al 3 -MMO</option>
+        <option value="Ni-0.25% Pd/C in synergy with NaOH">Ni-0.25% Pd/C in synergy with NaOH</option>
+        <option value="CuO/CeO2">CuO/CeO2</option>
+        <option value="RuNi/C">RuNi/C</option>
+        <option value="CuZnAl">CuZnAl</option>
+        <option value="Ru₂Ni₁-NCNF">Ru₂Ni₁-NCNF</option>
+        <option value="Pd-Zn/AC">Pd-Zn/AC</option>
+        <option value="Ru/LNPC">Ru/LNPC</option>
+        <option value="Ni₁.₅Fe₁.₅/Al₂O₃">Ni₁.₅Fe₁.₅/Al₂O₃</option>
+        <option value="Chandru">Chandru</option>
+    </select>
+    <br>
+    <button type="submit">Predict</button>
+</form>
+
+{% if prediction %}
+    <div class="result">
+        <p>Predicted Conversion Rate: {{ prediction }}%</p>
+        <p>Catalyst Used: {{ catalyst }}</p>
+    </div>
+{% endif %}
+
+{% if error %}
+    <div class="error">
+        <p>Error: {{ error }}</p>
+    </div>
+{% endif %}
+</center>
+</body>
+</html>
