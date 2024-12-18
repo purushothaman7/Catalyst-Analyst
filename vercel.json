@@ -14,7 +14,7 @@
     ],
     "env": {
       "FLASK_ENV": "production",
-      "PYTHONPATH": "Catalyst_Conversion_Rate_Predictor_Site"
+      "PYTHONPATH": ""
     }
   }
   
