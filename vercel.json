@@ -11,6 +11,9 @@
         "src": "/(.*)",
         "dest": "GUI.py"
       }
-    ]
+    ],
+    "env": {
+      "PYTHONPATH": "/usr/local/lib/python3.10/site-packages"
+    }
   }
   
