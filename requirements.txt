@@ -6,3 +6,6 @@ scikit-learn==1.2.1
 joblib==1.2.0
 setuptools==65.5.1
 wheel
+charset-normalizer
+chardet
+
