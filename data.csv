@@ -1,22 +1,88 @@
-﻿paper,catalyst used,temperature(process),pressure(process),surface area(mÂ²/g),reaction time(h),conversion rate1,lignin loading(wt%)
-https://doi.org/10.1016/j.fuel.2022.123249,Fe-Fe3C/C,700,>=6.5,0,5,48%,3.33
-https://doi.org/10.1016/j.fuel.2022.125548,NiRu/Al₂O₃,220,0,0,4,0,0
-https://doi.org/10.1016/j.ces.2022.117554,"Ru/4-1AC, ",250,2,2382,0,43.9,0
-https://doi.org/10.1016/j.ces.2023.119654, bimetallic NiCu/C catalyst,260,3,0,4,92.4,0
-https://doi.org/10.1016/j.fuel.2021.121818,"ZrO2, WOx, and MoO3",240,3,0,3,67 to 69,0.5
-https://doi.org/10.1016/j.fuel.2022.123156,Ni3Co1-based MOFs [,280,2,0,6,75.6,1
+paper ,catalyst used,temperature(process),pressure(process),surface area(m²/g),reaction time(h),conversion rate1,lignin loading(wt%)
+https://doi.org/10.1016/j.fuel.2022.123249,Fe-Fe3C/C,700,6.5,0,5,4800%,3.33
+https://doi.org/10.1016/j.fuel.2022.125548,NiRu/Al?O?,220,0,0,4,0,0
+https://doi.org/10.1016/j.ces.2022.117554,"Ru/4-1AC,�",250,2,2382,0,43.9,0
+https://doi.org/10.1016/j.ces.2023.119654,�bimetallic NiCu/C catalyst,260,3,0,4,92.4,0
+https://doi.org/10.1016/j.fuel.2021.121818,"ZrO2, WOx, and MoO3",240,3,0,3,69,0.5
+https://doi.org/10.1016/j.fuel.2022.123156,Ni3Co1-based MOFs�[,280,2,0,6,75.6,1
 https://doi.org/10.1016/j.fuel.2022.123338,"Ni 10% @Fe/NC 0.33 -800,",230,1,0,0.5,97.7,0
-https://doi.org/10.1016/j.fuel.2022.123732,Ni 9 Cu 1 -Mo 2 C/AC and Ni 7 Fe 3 -Mo 2 C/AC.,0,3,0,0,35.42,0
-https://doi.org/10.1016/j.fuel.2022.125027,Ni-Ru/Al2O3 ,100 to 150,0,0,4,48.57,0
+https://doi.org/10.1016/j.fuel.2022.123732,Ni 9 Cu 1 -Mo 2 C/AC�and�Ni 7 Fe 3 -Mo 2 C/AC.,0,3,0,0,35.42,0
+https://doi.org/10.1016/j.fuel.2022.125027,Ni-Ru/Al2O3�,100 to 150,0,0,4,48.57,0
 https://doi.org/10.1016/j.fuel.2022.126357,NiCoC,260,0,0,4,20.8,0.5
-https://doi.org/10.1016/j.fuel.2023.128570,Pd/C (palladium on carbon) combined with NaOH,260,2,0,4,0,0.5
+https://doi.org/10.1016/j.fuel.2023.128570,Pd/C�(palladium on carbon) combined with�NaOH,260,2,0,4,0,0.5
 https://doi.org/10.1016/j.fuel.2023.129982,Ni 3 Al 3 -MMO,700,0,134.74,0.0056,0,0
-https://doi.org/10.1016/j.fuel.2024.131135,Ni-0.25% Pd/C in synergy with NaOH. ,260,2,0,4,34.5,0
+https://doi.org/10.1016/j.fuel.2024.131135,Ni-0.25% Pd/C�in synergy with�NaOH.�,260,2,0,4,34.5,0
 https://doi.org/10.1016/j.fuel.2024.133301,CuO/CeO2,240,3,0,4,32.7,0.05
-https://doi.org/10.1016/j.ijhydene.2022.02.027,RuNi/C ,280,3,0,4,0,0.5
+https://doi.org/10.1016/j.ijhydene.2022.02.027,RuNi/C�,280,3,0,4,0,0.5
 https://doi.org/10.1016/j.fuproc.2022.107448,CuZnAl,130,0,0,12,0,0
-https://doi.org/10.1016/j.fuproc.2022.107519,Ru₂Ni₁-NCNF,300,0,0,3,93.88,0
-https://doi.org/10.1016/j.indcrop.2024.118860," Pd-Zn/AC, ",300,3,0,4,0,0
+https://doi.org/10.1016/j.fuproc.2022.107519,Ru?Ni?-NCNF,300,0,0,3,93.88,0
+https://doi.org/10.1016/j.indcrop.2024.118860,"�Pd-Zn/AC,�",300,3,0,4,0,0
 https://doi.org/10.1016/j.indcrop.2024.119838,Ru/LNPC,280,1,0,2,45.6,0.3
-https://doi.org/10.1016/j.biombioe.2024.107449, Ni₁.₅Fe₁.₅/Al₂O₃,240,1,0,16.6,4,0.03
-https://doi.org/10.1016/j.cej.2022.137723,,,,,,,
+https://doi.org/10.1016/j.biombioe.2024.107449,�Ni?.?Fe?.?/Al?O?,240,1,0,16.6,4,0.03
+https://doi.org/10.1016/j.cej.2022.137723,Ni/ZrP,220,0.5,0,0.5,97.25,0
+https://doi.org/10.1016/j.joei.2021.09.005,CaO/TiO2,280,1,0,0,82.8,0
+https://doi.org/10.1016/j.mcat.2022.112532,Ru-Cu/Zirconia,270,1,0,3,47,0.00
+https://doi.org/10.1016/j.mcat.2023.113334,NixCoyAl ,180,1,0,2,100,0
+https://doi.org/10.1016/j.mcat.2023.113535,CeO2/AC,200,1,0,4,98.5,36.2
+https://doi.org/10.1016/j.biombioe.2019.105432,�Ru/Al?O?,250,4,0,0,62.8,0
+https://doi.org/10.1016/j.cattod.2020.06.027,Pt/HAP-3,280,3,0,0.33,15.1,0
+https://doi.org/10.1016/j.fuel.2020.118758,RuNi/SiO2-ZrO2,260,0,0,0,22.6,0
+https://doi.org/10.1016/j.fuel.2020.119333,Hf(OTf)4 and Ru/?-Al2O3,400,2,0,14,42.98,0
+https://doi.org/10.1016/j.fuproc.2020.106479,PTA/MCM-41,300,0,0,6,94.79,0
+https://doi.org/10.1016/j.fuproc.2020.106523,Ni 10%/TiN,300,3,0,3,100,0
+https://doi.org/10.1016/j.fuproc.2020.106713,"�Fe-Pd bimetallic catalyst supported on HZSM-5,",320,1,0,2,98.17,0.1
+http://dx.doi.org/10.1021/acs.iecr.9b01973,�N-STC,250,0,18.7,3,55.2,0
+DOI: 10.1021/acssuschemeng.0c01457 ,FeNi-ZrO2,300,5,0,0,98.5,0
+DOI:10.1021/acssuschemeng.0c02102,�NiMoS?,250,2,150,6,76,100
+DOI:10.1021@acssuschemeng.7b00239,CuMgAlO x,340,3,0,4,0,1
+DOI:10.1021@acssuschemeng.9b02005,Ni?Co/C ,260,1,246,4,97.5,1
+DOI: 10.1039/x0xx00000x,Ni/ZrP,260,3,0,4,87.3,0.5
+DOI: 10.1039/c9gc00593e,"HZSM-5,",260,0,0,2,77.1,0.06
+DOI: 10.1039/C9GC00986H,PdC,200,3,0,0,0,1
+DOI:10.3390@catal7090265,Pt-SnCNFI,350,1,0,0,60,0
+DOI:10.3390@catal9060488,Ni/C,300,6,97,0,50,0
+DOI: 10.1021/acscatal.8b03402 ,CoMoS,300,4,0,4,98,0
+https://doi.org/10.1016/j.rser.2020.110667,Ni2P-SiO2,220,0.1,0,10,96.8,0
+https://doi.org/10.1016/j.apcata.2018.06.012,NiHZSM-5�,250,5,198,4,20,0
+https://doi.org/10.3390/catal12060664,Ru/C and Pt/C,250,3,750,0.67,0,0
+https://doi.org/10.3390/catal12121625,Ru-Ni12P5/S-1�,0,0,0,0,94.7,0
+DOI: 10.3303/CET1976164,HPS,300,4,0,1,68,0
+doi.org/10.1002/cctc.202200549,Ru/C,280,3,0,4,50,0
+doi.org/10.1002/cctc.202200274,Co� Al?O? @USY,180,5,0,4,93.6,0
+doi.org/10.1002/cctc.202300764,"�Ni-MgO/SiO?,�",250,1.5,0,2,93,0
+doi.org/10.1002/cssc.202200099,"NiMo/Al-MCM-41,",200,0,0,8,61.6,0.5
+https://doi.org/10.1016/j.fuel.2018.03.041,Pd/C,300,1.5,0,2,0,0
+https://doi.org/10.1002/ceat.201600539,NiO/HZSM-5�,500,0,0,0,0,100
+http://dx.doi.org/10.1021/acssuschemeng.9b05820,"transition-metal catalysts,",270,0,0,4,48,0.15
+https://doi.org/10.1016/j.biortech.2020.124238,NiCu/C�,270,1,0,4,67.1,0.3
+DOI: 10.1039/d2cy01800d,Ni/(Fe/Zn/Co/Mo/Cu)-WO?/Al?O?,240,0,139,8,0,0
+DOI: 10.1039/d2re00091a,Ni/ZrO?,180,2,0,0,87.7,0
+DOI: 10.1039/d3gc01988h,"Ni 5 Fe 5 /Al 2 O 3,",230,15,0,3,0,0
+http://dx.doi.org/10.1016/j.biortech.2017.01.014,20NiMoP/AC,350,0,0,2,0,0
+DOI: 10.1039/d0ra08121c,Co-Zn/Off-Al H-beta,240,0,0,6,81.1,0
+https://doi.org/10.1016/j.biombioe.2019.105413,"Pd/C, Fe/C, Co/C, and Ni/C",270,5.5,0,0.5,0,5
+https://doi.org/10.3389/fenrg.2018.00002,�Pd-zeolite Y,180,3.5,0,0,0,0
+https://doi.org/10.1021/acssuschemeng.4c03896?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as,�15Ni/SA-Zr,260,2,0,4,66.7,0.2
+http://dx.doi.org/10.1016/j.cej.2017.02.045,"NaOH,�KOH, and�Na?CO?�",330,1,0,0.5,21.2,3.5
+https://doi.org/10.1016/j.cej.2017.11.118,Ru and Ni,350,3,1000,0.67,0,0
+DOI: 10.1039/C6CY00523C,Ru/C,400,10,0,4,0,5
+http://dx.doi.org/10.1016/j.fuel.2016.08.001,"MoS?, NiS?/MoS?, CoS?/MoS?, and Ag?S/MoS?",310,2.5,0,1,91.26,4
+http://dx.doi.org/10.1021/acscatal.9b00556,Ru/C�,220,3,200,4,26.6,0
+https://doi.org/10.1016/j.renene.2021.01.150,3Ni-1.5Ru/H-ZSM-5,230,2.5,0,4,88.1,0.4
+http://dx.doi.org/10.1016/j.apenergy.2014.12.025,5 wt% Ru/C and 5 wt% Pd/C,260,4,0,4,92.5,1
+https://doi.org/10.3390/molecules27051494,�Pt-Ni/SiO2 and Pt-Ni-Cr/Al2O3,250,3.5,0,4,0,15
+https://doi.org/10.1016/j.cjche.2021.07.018,Ni 1.2 -ZrO 2 /WO 3 /?-Al 2 O 3,240,0,0,0,85.66,1
+https://doi.org/10.1016/j.cej.2021.132181,Ni?WOx/NiAl2O4,250,5,0,4,97.8,0
+https://doi.org/10.1016/j.mset.2021.08.006,Pt/HZSM-23,200,0,0,6,87.3,0
+http://dx.doi.org/10.1021/acsanm.8b02324,Pt?Ru,110,1,367,0,28.2,0
+http://dx.doi.org/10.1016/j.biortech.2016.09.043,Pd/C in combination with CrCl?,300,2,0,4,0,0
+https://doi.org/10.1016/j.apcatb.2021.120449,ReS2/Al2O3,340,5.6,0,3,0,3
+DOI: 10.1002/cssc.201701567,Hf(OTf)4 (a super Lewis acid) and Ru/Al2O3,250,4,0,4,0,0
+DOI: 10.1021/acs.energyfuels.8b01032,NiAl alloy,220,2,0,0.5,86.6,0.2
+http://dx.doi.org/10.1021/acs.iecr.9b00376,Nb 2 ?Ni 1 /ZnO?Al 2 O 3,225,2,0,4,0,0.3
+https://doi.org/10.1021/acs.iecr.1c04594?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as,2.5 wt % Ru and 10 wt % Ni,280,1,0,5,91.7,0
+https://doi.org/10.1021/acssuschemeng.3c02974?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as,3%Pd-1%Ni/AC,180,1,2399,1,75.7,0
+https://doi.org/10.1016/j.fuel.2020.120091,H?WO? and Ru/C.,260,0.3,0,4,99,0
+http://dx.doi.org/10.1021/acssuschemeng.9b05041,�Ni/MgO,270,3,0,4,93.4,0
+DOI: 10.1021/acssuschemeng.8b00701,"Ru/C, Ni/ZSM-5, and CuNiAl�",290,12,0,3,0,0
+https://dx.doi.org/10.1021/acs.iecr.0c01827?ref=pdf,Ni/CaO-HZSM-5,200,0,0,0,44,0

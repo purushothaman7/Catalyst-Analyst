@@ -5,12 +5,26 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 import os
+import chardet
+from charset_normalizer import detect
+
 
 app = Flask(__name__)
 
+with open("data.csv", "rb") as f:
+    result = chardet.detect(f.read())
+    print(result)
+
+
+
+
+with open("data.csv", "rb") as f:
+    result = detect(f.read())
+    print(result)
+
 # Load and preprocess the data
 data = pd.read_csv("data.csv")
-data = data.drop(columns=['paper', 'catalyst used'])
+data = data.drop(columns=['paper ', 'catalyst used'])
 data['temperature(process)'] = pd.to_numeric(data['temperature(process)'], errors='coerce')
 data['pressure(process)'] = pd.to_numeric(data['pressure(process)'], errors='coerce')
 
