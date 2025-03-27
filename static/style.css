@@ -35,7 +35,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 10   00px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -774,16 +774,20 @@ footer p {
 }
 
 .summary-stats {
-    display: grid;
-    grid-template-columns: repeat( 1fr);
-    gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
+    display: flex;/* 3 equal columns with min-width */
+  
     margin-bottom: 2.5rem;
+    justify-content: center; /* Centers the grid columns */
+    justify-items: center;   /* Centers content horizontally in each cell */
+    align-items: center;     /* Centers content vertically in each cell */
+    width: fit-content;      /* Makes container only as wide as needed */
+    margin-left: auto;       /* These two auto margins */
+    margin-right: auto;      /* center the entire grid */
 }
-
 .stat-card {
     background: white;
+    width: 90%;
+    height: 90%;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     padding: 1.5rem;
