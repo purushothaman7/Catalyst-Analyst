@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="insights-section">
+    <div class="insights-header">
+        <h2>Catalyst Performance Insights</h2>
+        <p>Discover trends, patterns, and key metrics from our catalyst conversion database</p>
+        <div class="alert alert-info">
+            <i class="fas fa-info-circle"></i>
+            Last updated: {{ last_updated }}
+        </div>
+    </div>
+
+    <div class="summary-stats">
+        <div class="stat-card">
+            <i class="fas fa-flask"></i>
+            <h3>{{ summary.total_catalysts }}</h3>
+            <p>Catalysts Analyzed</p>
+        </div>
+        <div class="stat-card">
+            <i class="fas fa-percentage"></i>
+            <h3>{{ summary.avg_conversion }}</h3>
+            <p>Average Conversion</p>
+        </div>
+        <div class="stat-card">
+            <i class="fas fa-trophy"></i>
+            <h3>{{ summary.top_performer }}</h3>
+            <p>Top Performer</p>
+        </div>
+        
+    </div>
+
+    <div class="insights-grid">
+        {% for insight in insights %}
+        <div class="insight-card">
+            <h3>{{ insight.title }}</h3>
+            <div class="chart-container">
+                <div class="chart-placeholder" style="color: black">
+                    <i class="fas fa-{{ insight.icon }} fa-3x"></i>
+                   
+                </div>
+            </div>
+            <div class="insight-stats">
+                {% for stat in insight.stats %}
+                <div class="stat-item">
+                    <div class="stat-value">{{ stat.value }}</div>
+                    <div class="stat-label">{{ stat.label }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            <p class="insight-description">
+                {{ insight.description }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

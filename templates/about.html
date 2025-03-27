@@ -8,7 +8,9 @@
     </div>
 
     <div class="team-members">
+        
         {% for member in team_members %}
+        
         <div class="team-card">
             <div class="team-image">
                 <img src="{{ url_for('static', filename='images/' + member.image) }}" alt="{{ member.name }}">
@@ -18,16 +20,21 @@
                 <p class="department">{{ member.department }}</p>
                 <p class="role">{{ member.role }}</p>
                 <a href="{{ member.linkedin }}" target="_blank" class="linkedin-btn">
-                    <i class="fab fa-linkedin"></i> LinkedIn Profile
+                    LinkedIn Profile
                 </a>
             </div>
         </div>
+
         {% endfor %}
     </div>
 
     <div class="acknowledgement">
         <h3>Acknowledgement</h3>
-        <p>{{ acknowledgement }}</p>
+        <p> This website was developed with the assistance of <b>Purushoth</b>, our machine learning expert.</p>
+        <br>
+        <a href="www.linkedin.com/in/purushothaman-m-b4ba9122b" target="_blank" class="linkedin-btn">
+            LinkedIn Profile
+        </a>
     </div>
 
     <div class="back-home">

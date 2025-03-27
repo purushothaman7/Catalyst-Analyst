@@ -8,18 +8,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<!-- Add this inside the <header> section, after the <h1> -->
-    <nav class="main-nav">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-        </ul>
-    </nav>
 <body>
     <header>
         <div class="container">
-            <h1>Catalyst Conversion Rate Predictor</h1>
-            <p>Predict the conversion rate based on process parameters and catalyst used</p>
+            <div class="header-content">
+                <div class="logo-container">
+                    <h1>Catalyst Conversion Rate Predictor</h1>
+                    <p>Predict the conversion rate based on process parameters and catalyst used</p>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/" class="nav-link {% if active_page == 'home' %}active{% endif %}"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="/about" class="nav-link {% if active_page == 'about' %}active{% endif %}"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="/insights" class="nav-link {% if active_page == 'insights' %}active{% endif %}"><i class="fas fa-chart-line"></i> Insights</a></li>
+                        <!-- <li><a href="#" class="nav-link"><i class="fas fa-book"></i> Documentation</a></li> -->
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     
@@ -29,7 +34,9 @@
     
     <footer>
         <div class="container">
-            <p>© 2025 Catalyst Conversion Predictor | Scientific Machine Learning Application</p>
+            
+                <p>© 2025 Catalyst Conversion Predictor | Scientific Machine Learning Application</p>
+            </div>
         </div>
     </footer>
 </body>
