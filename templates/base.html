@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalyst Conversion Rate Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<!-- Add this inside the <header> section, after the <h1> -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+    </nav>
+<body>
+    <header>
+        <div class="container">
+            <h1>Catalyst Conversion Rate Predictor</h1>
+            <p>Predict the conversion rate based on process parameters and catalyst used</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Catalyst Conversion Predictor | Scientific Machine Learning Application</p>
+        </div>
+    </footer>
+</body>
+</html>

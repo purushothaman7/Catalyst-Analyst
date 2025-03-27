@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="prediction-result">
+    <div class="result-card {{ 'exact-match' if match_type == 'exact' else 'model-prediction' }}">
+        <h2>Prediction Result</h2>
+        
+        <div class="result-message">
+            <i class="fas fa-{{ 'check-circle' if match_type == 'exact' else 'brain' }}"></i>
+            <p>{{ message }}</p>
+        </div>
+        
+        <div class="prediction-value">
+            <span>Conversion Rate:</span>
+            <strong>{{ prediction }}%</strong>
+        </div>
+        
+        <div class="input-summary">
+            <h3>Input Parameters</h3>
+            <ul>
+                <li><strong>Temperature:</strong> {{ input_data.temperature }} °C</li>
+                <li><strong>Pressure:</strong> {{ input_data.pressure }} MPa</li>
+                <li><strong>Surface Area:</strong> {{ input_data.surface_area }} m²/g</li>
+                <li><strong>Reaction Time:</strong> {{ input_data.reaction_time }} hours</li>
+                <li><strong>Lignin Loading:</strong> {{ input_data.lignin_loading }} wt%</li>
+                <li><strong>Catalyst:</strong> {{ input_data.catalyst }}</li>
+            </ul>
+        </div>
+        
+        <a href="/" class="btn-new-prediction">
+            <i class="fas fa-arrow-left"></i> Make Another Prediction
+        </a>
+    </div>
+</section>
+{% endblock %}

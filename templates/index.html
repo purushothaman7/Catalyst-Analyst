@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="prediction-form">
+    <h2>Enter Process Parameters</h2>
+    
+    {% if error %}
+    <div class="alert error">
+        <i class="fas fa-exclamation-circle"></i> {{ error }}
+    </div>
+    {% endif %}
+    
+    <form method="POST" action="/">
+        <div class="form-group">
+            <label for="temperature">Process Temperature (°C)</label>
+            <input type="number" step="0.1" id="temperature" name="temperature" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="pressure">Process Pressure (MPa)</label>
+            <input type="number" step="0.01" id="pressure" name="pressure" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="surface_area">Surface Area (m²/g)</label>
+            <input type="number" step="1" id="surface_area" name="surface_area" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="reaction_time">Reaction Time (hours)</label>
+            <input type="number" step="0.1" id="reaction_time" name="reaction_time" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="lignin_loading">Lignin Loading (wt%)</label>
+            <input type="number" step="0.1" id="lignin_loading" name="lignin_loading" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="catalyst">Catalyst Used</label>
+            <input type="text" id="catalyst" name="catalyst" required>
+            <small>Example: N-STC, Fe/AC, etc.</small>
+        </div>
+        
+        <button type="submit" class="btn-predict">
+            <i class="fas fa-calculator"></i> Predict Conversion Rate
+        </button>
+    </form>
+    
+    <div class="model-info">
+        <h3>About the Model</h3>
+        <p>This predictor uses an XGBoost machine learning model trained on experimental data to estimate conversion rates.</p>
+        <img src="{{ url_for('static', filename='accuracy_plot.png') }}" alt="Model Accuracy">
+    </div>
+</section>
+{% endblock %}

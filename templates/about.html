@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="about-section">
+    <div class="about-header">
+        <h2>About Our Team</h2>
+        <p>Meet the researchers behind the Catalyst Conversion Rate Predictor</p>
+    </div>
+
+    <div class="team-members">
+        {% for member in team_members %}
+        <div class="team-card">
+            <div class="team-image">
+                <img src="{{ url_for('static', filename='images/' + member.image) }}" alt="{{ member.name }}">
+            </div>
+            <div class="team-details">
+                <h3>{{ member.name }}</h3>
+                <p class="department">{{ member.department }}</p>
+                <p class="role">{{ member.role }}</p>
+                <a href="{{ member.linkedin }}" target="_blank" class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i> LinkedIn Profile
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="acknowledgement">
+        <h3>Acknowledgement</h3>
+        <p>{{ acknowledgement }}</p>
+    </div>
+
+    <div class="back-home">
+        <a href="/" class="btn-home">
+            <i class="fas fa-arrow-left"></i> Back to Predictor
+        </a>
+    </div>
+</section>
+{% endblock %}
